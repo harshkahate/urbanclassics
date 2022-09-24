@@ -1,0 +1,290 @@
+html {
+    font-size: 62.5%;
+    /* 62.5% = 10px */
+}
+
+* {
+    /* eliminates all default margins in the web page */
+    margin: 0;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* styling the header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(253, 241, 206, 0.9);
+    color: #67595e;
+    /* making the header sticky */
+    position: fixed;
+    width: 100vw;
+    height: 13vh;
+    z-index: 100;
+}
+
+header h1 {
+    margin-left: 0.5rem;
+    font-size: 3.5rem;
+    font-style: italic;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #67595e;
+    padding: 4.5rem;
+    font-size: 1.5rem;
+}
+
+header nav ul li a:hover {
+    font-weight: bold;
+}
+
+/* .header .row {
+    margin-top: 4px;
+} */
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row-2 {
+    justify-content: space-between;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    min-width: 300px;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-4 h4 {
+    font-size: 30px;
+    margin: 5px;
+}
+
+select {
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+
+/*
+To remove the border effect turning back to black once option is changed
+*/
+select:focus {
+    outline: none;
+}
+
+.page-btn {
+    margin: 0 auto 80px;
+}
+
+.page-btn span {
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover {
+    background: #ff523b;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX();
+}
+
+.h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p {
+    font-size: 14px;
+}
+
+.col-4:hover {
+    transform: translateY('-5px');
+}
+
+.rating .fa {
+    color: #ff523b;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.heading {
+    margin-top: 15vh;
+    margin-left: .8rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+.footer-body 
+{
+    margin-top: 349vh;
+    position: absolute;
+    width: 349vh;
+    overflow: hidden;
+    margin-top: 10vh;
+}
+.inner-footer
+{
+    background-color: #272727;
+}
+.social-media
+{
+    display: flex;
+}
+.social-media ul 
+{
+    padding: 1rem; 
+    display: flex;
+    width: 18.75rem;
+    height: 2rem;
+    margin: auto;
+}
+.social-items
+{
+    list-style: none;
+}
+
+.social-items a
+{
+    padding: 0.8rem 1.2rem;
+    font-size: 2.2rem;
+    color: #6cccc6;
+    width: 20rem;
+    height: 2rem;
+    margin: auto;
+
+}
+.quick-links
+{
+    display: flex;
+    width: 570px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    padding-bottom: 0%;
+}
+.quick-links ul
+{
+    display: flex;
+    padding: 0.6rem; 
+    list-style: none;
+}
+
+.quick-items
+{
+    list-style: none;
+}
+
+
+.quick-items a
+{
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-size: 1rem;
+    color: white;
+    transition: all .25s;
+}
+.quick-items a:hover
+{
+    color: #6c6c6c;
+}
+.quick-links a
+{
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-size: 1.8rem;
+    color:white;
+    text-align: center;
+}
+
+.outer-footer
+{
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    background-color: #3f3f3f;
+}

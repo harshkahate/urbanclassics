@@ -1,0 +1,334 @@
+html {
+    font-size: 62.5%;
+    /* 62.5% = 10px */
+}
+
+* {
+    /* eliminates all default margins in the web page */
+    margin: 0;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ /* *{ border: 1px solid red; } */
+
+body {
+    overflow-x: hidden;
+}
+
+/* styling the header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(253,241,206,0.9);
+    color: #67595e;
+    /* making the header sticky */
+    position: fixed;
+    width: 100vw;
+    height: 13vh;
+    z-index: 100;
+}
+header h1 {
+    margin-left: 0.5rem;
+    font-size: 3.5rem;
+    font-style: italic;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #67595e; 
+    padding: 4.5rem;
+    font-size: 1.5rem;
+}
+header nav ul li a:hover {
+    font-weight: bold; 
+}
+
+/* styling the Home section */
+#home {
+    /* giving background image to home section */
+    position: absolute;
+    background-image: url('../img/background-img/home-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:90vh;
+    width: 100vw;
+}
+#home div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: justify;
+    margin-top: 50vh;
+}
+h2 {
+    font-size: 3.2rem;
+}
+#home div p {
+    width: 35vw;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    background-color: rgba(0,0,0,0.5);
+    padding: 2rem;
+}
+button,.btn {
+    background-color: #fdf1ce;
+    border-radius: 2.5rem;
+    padding: 2rem;
+    border: none;
+    text-align: center;
+}
+button a,.btn {
+    text-decoration: none;
+    color: #67595e;
+    font-size: 1.4rem;
+}
+button a:hover,.btn:hover{
+    font-weight: bold; 
+}
+
+/* styling the About Us section */
+#about-us {
+  margin-top: 90vh;  
+  /* giving background image to About Us section */
+  position: absolute;
+  background-image: url('../img/background-img/about-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+    margin-top: 5vh;
+    margin-left: .8rem;
+}
+#about-us div {
+    width: 44.5rem;
+    height: 40rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+#about-us div img {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+}
+#about-us div p, #contact form p {
+    color: white;
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+/* styling the Our Products section */
+#products {
+    margin-top: 180vh;
+    position: absolute;
+    background-image: url('../img/background-img/products-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    width: 100vw;
+}
+#products div {
+    display: flex;
+    justify-content: space-evenly;
+}
+#products h2 {
+    text-align: center;
+}
+#products div div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    padding: 4rem;
+    margin-top: 5vh;
+}
+#products div div:hover {
+    background-color: rgba(204,204,204,0.5);
+    cursor: pointer;
+    color: black;
+}
+#products div div img {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+}
+#products div div h3 {
+    margin: auto;
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+}
+#products button {
+    margin-left: 43vw;
+    margin-top: 3vh;
+    padding: 0.2vh;
+    width: 30vh;
+}
+
+/* styling the Contact Us section */
+#contact {
+    margin-top: 274vh;
+    position: absolute;
+    background-image: url('../img/background-img/contact-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input[type=text],input[type=tel] {
+    color: #67595e;
+    border-radius: 2.5rem;
+    padding: 2rem;
+    border: none;
+    width: 30vw;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+} 
+#contact form div {
+    /* centering the button */
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    margin-right: 1rem;
+}
+#contact form p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#contact form {
+    background-color: rgba(0,0,0,0.5);
+    padding: 2rem;
+}
+
+#contact {
+    margin-top: 274vh;
+    margin-bottom: 100vh;
+    position: absolute;
+    background-image: url('../img/background-img/contact-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-body 
+{
+    margin-top: 349vh;
+    position: absolute;
+    width: 349vh;
+    overflow: hidden;
+    /* padding-bottom: 0%; */
+}
+.inner-footer
+{
+    background-color: #272727;
+}
+.social-media
+{
+    display: flex;
+}
+.social-media ul 
+{
+    padding: 1rem; 
+    display: flex;
+    width: 18.75rem;
+    height: 2rem;
+    margin: auto;
+}
+.social-items
+{
+    list-style: none;
+}
+
+.social-items a
+{
+    padding: 0.8rem 1.2rem;
+    font-size: 2.2rem;
+    color: #6cccc6;
+    width: 20rem;
+    height: 2rem;
+    margin: auto;
+
+}
+.quick-links
+{
+    display: flex;
+    width: 570px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    padding-bottom: 0%;
+}
+.quick-links ul
+{
+    display: flex;
+    padding: 0.6rem; 
+    list-style: none;
+}
+
+.quick-items
+{
+    list-style: none;
+}
+
+
+.quick-items a
+{
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-size: 1rem;
+    color: white;
+    transition: all .25s;
+}
+.quick-items a:hover
+{
+    color: #6c6c6c;
+}
+.quick-links a
+{
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-size: 1.8rem;
+    color:white;
+    text-align: center;
+}
+
+.outer-footer
+{
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    background-color: #3f3f3f;
+}
+
+
