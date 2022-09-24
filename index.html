@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Classics - Redefining Men's Fashion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
+</head>
+<body>
+    <header>
+        <h1>Urban Classics</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#products">Our Products</a></li>
+                <li><a href='faq.html'>FAQ</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div>
+            <h2>Welcome to Urban Classics</h2>
+            <p>We are India's favourite men's fashion line with over 2 million happy 
+            customers. Check out our products and fall in love with us!</p>
+            <button><a href="#products">View Products</a></button>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <h2 class="heading">About Us</h2>
+        <div>
+            <img src="./img/company-logo-img/logo.png" alt="Urban Classic's logo">
+            <p>We started in 2011 with a team of four from Pune with the dream of 
+            making high-quality men’s fashion products affordable and accessible to 
+            Indian men. As our customers started falling in love with our products, we 
+            scaled our services over time and now serve gentlemen all across the 
+            country. With over 2 million customers and growing, we are on a mission to 
+            ensure that every man has the right clothing and accessories to make him 
+            what he truly is – a class apart!</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2 class="heading">Our Products</h2>
+        <div>
+            <!-- window.location.href is used to redirect to another page when a click is made -->
+            <div onclick="window.location.href='./clothing.html'">
+                <img src="./img/index-page-img/product-clothing.png" alt="Men's Clothing Image">
+                <h3>Men's Clothing</h3>
+            </div>
+            <div onclick="window.location.href='./watches.html'">
+                <img src="./img/index-page-img/product-watches.jpg" alt="Men's Watches Image">
+                <h3>Men's Watches</h3>
+            </div>
+            <div onclick="window.location.href='./shoes.html'">
+                <img src="./img/index-page-img/product-shoes.jpg" alt="Men's Shoes Image">
+                <h3>Men's Shoes</h3>
+            </div>
+        </div>
+        <button><a href="./best-sellers.php">View Our Best Sellers</a></button>
+    </section>
+
+    <section id="contact">
+        <h2 class="heading">Contact Us</h2>
+        <!-- the names are used by js and php to recognise the tags and access the 
+        values in those tags 
+        action will store the name of the file where the form is to be submitted 
+        here we are submitting the name and phone number entered by the user to 
+        form-submit.php using post method
+        only if formValidation() results in true then the form gets submitted -->
+        <form action="./form-submit.php" name="contact-form" method="post" onsubmit="return formValidation()">
+            <input type="text" name="userName" placeholder="Enter Your Name Here"><br>
+            <input type="tel" name="userPhNum" placeholder="Enter Your Phone Number Here"><br>
+            <p>You will hear back from us within 2 hours</p>
+            <div>
+                <input type="submit" value="Submit Form" class="btn">
+                <input type="reset" value="Clear Form" class="btn"> 
+            </div>
+        </form>
+    </section>
+
+<div class = "footer-body"> 
+    <footer class="footer">
+        <div class="inner-footer">
+            <div class="social-media">
+                <ul>
+                    <li class = "social-items"><a href="facebook.com"> <i class="fab fa-facebook"></i></a></li>
+                    <li class="social-items"> <a href="web.whatsapp.com"><i class="fab fa-whatsapp"></i></i></a></li>
+                    <li class="social-items"> <a href="instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li class="social-items"> <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="quick-links">
+                <ul>
+                    <li class="quick-items"> <a href = "./index.html#home">Home</a></li>
+                    <li class="quick-items"> <a href = "#about-us">About Us</a></li>
+                    <li class="quick-items"> <a href = "#products">Products</a></li>
+                    <li class="quick-items"> <a href = "faq.html">FAQ</a></li>
+                    <li class="quick-items"> <a href = "#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="outer-footer">
+            Copyright &copy; Urban Classics. All Rights Reserved 
+        </div>
+    
+    </footer>
+</div>
+</body>
+</html>

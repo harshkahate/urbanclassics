@@ -1,0 +1,231 @@
+<html>
+    <head> 
+        <title> Clothing </title>
+        <link rel = "stylesheet" href = "css/clothing.css"> 
+        <script src="https://use.fontawesome.com/0f0cf0207a.js"></script>
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   
+        <header>
+            <h1>Urban Classics</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#about-us">About Us</a></li>
+                    <li><a href="./index.html#products">Our Products</a></li>
+                    <li><a href="./index.html#faq">FAQ</a></li>
+                    <li><a href="./index.html#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function () {
+                $('form.custom-add2cart').each(function () {
+                    var form = $(this).get(0);
+                    if (form) {
+                        form.commonController.enableBackgroundSubmit()
+                    }
+                })
+            };
+            function bought() {
+               alert("Product bought");
+            }
+         </script>
+             
+        
+        <div class = "header"> 
+        <div class = "small-container">
+            <div class ="row row-2">
+                <center> <h2 class = "heading"> All Clothing Products </h2> </center> 
+            </div>
+        </div>
+        
+
+        <div class = "small-container">
+           <!--- <h2 class = "title"> Featured products </h2> -->
+            <div class = "row">
+                <div class = "col-4">
+                    <img src = "./img/clothing-images/product-1.jpg">
+                    <p> Puma Shirt </p>
+                    <div class = "rating">
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star-o"> </i>
+                    </div>
+                    <p> 299 Rs. </p>
+                    <!-- Buy Now - Buy and alert - product bought and -->
+                    <form action="cart.php" method="post" class="custom-add2cart">
+                        <input type="hidden" name="target" value="cart" />
+                        <input type="hidden" name="action" value="add" />
+                        <input type="hidden" name="product_id" value="1" />
+                        <div class="add-button-wrapper widget-fingerprint-product-add-button">
+                            <button type="submit" class="btn regular-button regular-main-button add2cart submit" name = "submit" onclick = "bought()">
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                     </form>
+                           
+                </div>
+
+
+                <div class = "col-4">
+                    <img src = "./img/clothing-images/product-3.jpg">
+                    <p> Track Pant </p>
+                    <div class = "rating">
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star-"> </i>
+                        <i class = "fa fa-star-half-o"> </i>
+                    </div>
+                    <p> 550 Rs. </p>
+                    <form action="cart.php" method="post" class="custom-add2cart">
+                        <input type="hidden" name="target" value="cart" />
+                        <input type="hidden" name="action" value="add" />
+                        <input type="hidden" name="product_id" value="2" />
+                        <div class="add-button-wrapper widget-fingerprint-product-add-button">
+                            <button type="submit" class="btn regular-button regular-main-button add2cart submit" name = "submit" onclick = "bought()">
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                     </form>
+                </div>
+
+                <div class = "col-4">
+                    <img src = "./img/clothing-images/product-6.jpg">
+                    <p> Puma Jersey </p>
+                    <div class = "rating">
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star-"> </i>
+                        <i class = "fa fa-star-half-o"> </i>
+                    </div>
+                    <p> 679 Rs. </p>
+                    <form action="cart.php" method="post" class="custom-add2cart">
+                        <input type="hidden" name="target" value="cart" />
+                        <input type="hidden" name="action" value="add" />
+                        <input type="hidden" name="product_id" value="3" />
+                        <div class="add-button-wrapper widget-fingerprint-product-add-button">
+                            <button type="submit" class="btn regular-button regular-main-button add2cart submit" name = "submit" onclick = "bought()">
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                     </form>
+                </div>
+
+
+                <div class = "col-4">
+                    <img src = "./img/clothing-images/product-4.jpg">
+                    <p> Polo Shirt </p>
+                    <div class = "rating">
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star-"> </i>
+                        <i class = "fa fa-star-half-o"> </i>
+                    </div>
+                    <p> 582 Rs. </p>
+
+                    <form action="cart.php" method="post" class="custom-add2cart">
+                        <input type="hidden" name="target" value="cart" />
+                        <input type="hidden" name="action" value="add" />
+                        <input type="hidden" name="product_id" value="4" />
+                        <div class="add-button-wrapper widget-fingerprint-product-add-button">
+                            <button type="submit" class="btn regular-button regular-main-button add2cart submit" name = "submit" onclick = "bought()">
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                     </form>
+                </div>
+
+                <div class = "col-4">
+                    <img src = "./img/clothing-images/product-12.jpg">
+                    <p> Cotton Track Pant </p>
+                    <div class = "rating">
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star-"> </i>
+                        <i class = "fa fa-star-half-o"> </i>
+                    </div>
+                    <p> 700 Rs. </p>
+                    <form action="cart.php" method="post" class="custom-add2cart">
+                        <input type="hidden" name="target" value="cart" />
+                        <input type="hidden" name="action" value="add" />
+                        <input type="hidden" name="product_id" value="5" />
+                        <div class="add-button-wrapper widget-fingerprint-product-add-button">
+                            <button type="submit" class="btn regular-button regular-main-button add2cart submit" name = "submit" onclick = "bought()">
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                     </form>
+                </div>
+
+                <div class = "col-4">
+                    <img src = "./img/clothing-images/product-7.jpg">
+                    <p> Cotton Socks </p>
+                    <div class = "rating">
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star-"> </i>
+                        <i class = "fa fa-star"> </i>
+                        <i class = "fa fa-star"> </i>
+                    </div>
+                    <p> 700 Rs. </p>
+                    <form action="cart.php" method="post" class="custom-add2cart">
+                        <input type="hidden" name="target" value="cart" />
+                        <input type="hidden" name="action" value="add" />
+                        <input type="hidden" name="product_id" value="6" />
+                        <div class="add-button-wrapper widget-fingerprint-product-add-button">
+                            <button type="submit" class="btn regular-button regular-main-button add2cart submit" name = "submit" onclick = "bought()">
+                                <span>Buy Now</span>
+                            </button>
+                        </div>
+                     </form>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class = "footer-body"> 
+        <footer class="footer">
+            <div class="inner-footer">
+                <div class="social-media">
+                    <ul>
+                        <li class = "social-items"><a href="#"> <i class="fab fa-facebook"></i></a></li>
+                        <li class="social-items"> <a href="#"><i class="fab fa-whatsapp"></i></i></a></li>
+                        <li class="social-items"> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="social-items"> <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+    
+                <div class="quick-links">
+                    <ul>
+                        <li class="quick-items"> <a href = "./index.html#home">Home</a></li>
+                        <li class="quick-items"> <a href = "#about-us">About Us</a></li>
+                        <li class="quick-items"> <a href = "#products">Products</a></li>
+                        <li class="quick-items"> <a href = "faq.html">FAQ</a></li>
+                        <li class="quick-items"> <a href = "#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="outer-footer">
+                Copyright &copy; Urban Classics. All Rights Reserved 
+            </div>
+        </footer>
+    </div>
+    </body>
+</html> 
